@@ -1,0 +1,84 @@
+* {
+ box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  background-color: #F95758;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Open Sans', sans-serif;
+  padding: 12.8px;
+  padding: .8rem;
+  margin-bottom: 200px;
+}
+
+button {
+  padding: 8px 14px;
+  background-color: white;
+  border: 0;
+  font-size: 16px;
+  outline: none;
+  cursor: hover;
+}
+
+h1 {
+  font-family: 'Bitter', serif;
+  font-weight: normal;
+}
+
+h2, h3 {
+  font-weight: 600;
+}
+
+section {
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+section > div {
+  width: 32%;
+}
+
+
+
+/* 
+* PART 1 - Practicing transforms 
+*/
+
+/* Set a transition on everything with the class of bug */
+.bug {
+  transition: all 0.6s ease-in-out;
+}
+
+/* Use a transform to animate the first bug on hover */
+.bug1:hover {
+  transform: rotate(360deg);
+}
+
+/* Use a transform to animate the second bug on hover */
+.bug2:hover {
+  transform: scale(0.8);
+}
+
+/* Use TWO transforms to animate the third bug on hover */
+.bug3:hover {
+  transform: translateX(100px) skewX(20deg);
+}
+
+
+
+
+
+/*
+* PART 2 - Triggering transitions 
+*/
+
+/* Create a class called "animate" that applies a 
+ * transformation YOU HAVEN'T USED YET */
+.animate {
+  transform: rotateY(180deg);
+}
+
+
